@@ -1,0 +1,22 @@
+name: Lint Agents
+on:
+  push:
+    paths:
+      - 'academic/**'
+      - 'design/**'
+      - 'engineering/**'
+      - 'finance/**'
+      - 'game-development/**'
+      - 'gis/**'
+      - 'healthcare/**'
+      - 'marketing/**'
+      - 'paid-media/**'
+      - 'product/**'
+      - 'project-management/**'
+      - 'sales/**'
+      - 'security/**'
+      - 'spatial-computing/**'
+      - 'specialized/**'
+      - 'support/**'
+      - 'testing/**'
+      - 'legal-ops/**'
