@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions, ideas, and broad proposals
+    url: https://github.com/GenixBit/agency-agents/discussions
+    about: Use GitHub Discussions for support questions, new integrations, architectural proposals, and community ideas.
+  - name: Security vulnerability
+    url: https://github.com/GenixBit/agency-agents/security/advisories/new
+    about: Report vulnerabilities privately. Do not disclose security issues in a public issue.
+  - name: GenixBit business enquiries
+    url: https://www.genixbit.com/
+    about: Contact GenixBit for custom AI agents, product engineering, SaaS, web, mobile, cloud, and automation work.
