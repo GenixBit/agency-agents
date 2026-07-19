@@ -1,0 +1,45 @@
+name: Release Genixbit Agents
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Build and Publish Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run Validation Checks
+        run: |
+          bash scripts/lint-agents.sh
+          bash scripts/check-divisions.sh
+          bash scripts/check-tools.sh
+          bash scripts/check-runbooks.sh
+          python3 scripts/check-hermes-plugin.py
+
+      - name: Build Integrations
+        run: |
+          bash scripts/convert.sh
+
+      - name: Package Agent Roster
+        run: |
+          zip -r genixbit-agents-roster.zip . -x "*.git*" ".github/*"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Genixbit Agents ${{ github.ref_name }}
+          files: genixbit-agents-roster.zip
+          generate_release_notes: true
