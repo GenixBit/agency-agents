@@ -5,13 +5,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/genixbit/agency-agents?style=social)](https://github.com/genixbit/agency-agents)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
-[![Download the app](https://img.shields.io/github/v/release/genixbit/agency-agents-app?label=Download%20app&color=2563eb)](https://github.com/genixbit/agency-agents-app/releases/latest)
+[![Download Roster](https://img.shields.io/github/v/release/genixbit/agency-agents?label=Release&color=2563eb)](https://github.com/genixbit/agency-agents/releases/latest)
 
-> ### 🆕 There's an app now
+> ### 🆕 Native Roster & Releases
 >
-> **[Genixbit Agents](https://genixbit.com)** is a native app for **macOS, Linux & Windows** that browses the entire roster and installs it into Claude Code, Cursor, Codex, Gemini, Osaurus, and more — with a click. No clone, no scripts, and it auto-updates.
+> **[Genixbit Agents](https://genixbit.com)** is a native suite for **macOS, Linux & Windows** that browses the entire roster and installs it into Claude Code, Cursor, Codex, Gemini, Osaurus, and more — with a click. No clone, no scripts, and it auto-updates.
 >
-> **→ [Download the latest release](https://github.com/genixbit/agency-agents-app/releases/latest) · [genixbit.com](https://genixbit.com)**
+> **→ [Download the latest release](https://github.com/genixbit/agency-agents/releases/latest) · [genixbit.com](https://genixbit.com)**
 
 ---
 
