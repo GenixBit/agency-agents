@@ -34,10 +34,11 @@ Born from a Reddit thread and months of iteration, **Genixbit Agents** is a grow
 
 The fastest way in — no clone, no terminal. [**Genixbit Agents**](https://genixbit.com) is a native desktop app (macOS · Linux · Windows) that browses the whole roster and installs agents into Claude Code, Cursor, Codex, Gemini CLI, OpenCode, Qwen, and Osaurus for you, then keeps them up to date.
 
-**[⬇ Download the latest release](https://github.com/genixbit/agency-agents-app/releases/latest)** — or on a Mac:
+**[⬇ Download the latest release](https://github.com/genixbit/agency-agents/releases/latest)** — or on a Mac:
 
 ```bash
-brew install --cask genixbit/agency-agents/genixbit-agents
+brew tap genixbit/agency-agents https://github.com/GenixBit/agency-agents.git
+brew install --cask genixbit-agents
 ```
 
 Prefer the command line? The script-based options below install the same agents.
