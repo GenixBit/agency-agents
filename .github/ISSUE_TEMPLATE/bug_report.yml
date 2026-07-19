@@ -1,0 +1,73 @@
+name: Bug report
+description: Report a reproducible problem in an agent, script, installer, release, or integration
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve GenixBit Agents. Do not include API keys, tokens, customer data, private repository information, or other sensitive content.
+
+  - type: checkboxes
+    attributes:
+      label: Preliminary checks
+      options:
+        - label: I searched existing issues and discussions for the same problem.
+          required: true
+        - label: I tested the latest default branch or latest published release.
+          required: true
+        - label: I removed credentials, personal information, and confidential data.
+          required: true
+        - label: This is not a security vulnerability. Security issues must follow SECURITY.md.
+          required: true
+
+  - type: input
+    attributes:
+      label: Affected agent, script, or integration
+      placeholder: engineering/engineering-ai-engineer.md, scripts/install.sh, Codex integration, etc.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Environment
+      description: Operating system, AI coding tool/runtime, tool version, and installation method.
+      placeholder: macOS 15, Codex CLI x.y.z, installed with install.sh
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Problem description
+      description: Explain what happened and why it appears incorrect.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Run ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual behaviour and sanitised logs
+      description: Redact secrets, local usernames, private paths, client names, and customer data.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Screenshots, minimal examples, possible cause, or suggested solution.
