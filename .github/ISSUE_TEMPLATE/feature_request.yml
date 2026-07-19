@@ -1,0 +1,60 @@
+name: Feature request
+description: Suggest a focused improvement to an existing agent, script, installer, or integration
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing an improvement. New platforms, architectural changes, and changes affecting many files should begin in GitHub Discussions as described in CONTRIBUTING.md.
+
+  - type: checkboxes
+    attributes:
+      label: Preliminary checks
+      options:
+        - label: I searched existing issues and discussions for this request.
+          required: true
+        - label: This request is not for access to a private repository, client code, credentials, or internal infrastructure.
+          required: true
+        - label: I have not included confidential, personal, or customer information.
+          required: true
+
+  - type: input
+    attributes:
+      label: Affected area
+      placeholder: Agent name, script, installer, documentation, or supported integration
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Problem or user need
+      description: Describe the real problem this request would solve.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Proposed change
+      description: Explain the desired behaviour, output, or workflow.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Example use case
+      description: Provide a realistic, non-sensitive example showing why the change matters.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives considered
+      description: Describe workarounds or other approaches you evaluated.
+
+  - type: checkboxes
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to submit a focused pull request following CONTRIBUTING.md.
